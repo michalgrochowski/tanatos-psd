@@ -14,6 +14,25 @@
 </head>
 <body> 
 <main>
+<div id="modal">
+	<span id="close">X</span>
+	<div id="modalContent">
+		<ul class="menu">
+			<li class="menuItem"><a href="#intro">HOME</a></li>
+			<li class="menuItem"><a href="#team">ABOUT US</a></li>
+			<li class="menuItem"><a href="#services">SERVICES</a></li>
+			<li class="menuItem"><a href="#works">OUR WORKS</a></li>
+			<li class="menuItem"><a href="#contact">CONTACT</a></li>
+		</ul>
+		<div class="social-icons-contact">
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
 <section id="intro">  
 	<nav class="container container-nav">
 		<div class="item-logo">
@@ -22,7 +41,9 @@
 		<div class="item-menu">
 			<a class="hamburger" href="#">
 				<p>Menu</p>
-				<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				<button id="openModal">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</button>
 			</a>
 		</div>
 	</nav>
@@ -188,10 +209,14 @@
 <footer id="footer">
 	<div class="container container-footer">
 		<p>&copy 2015 COPYRIGHT DESIGN STUDIO</p>
-		<p>DESIGNED BY <img src="img/symu.png" alt="symu" /></p>
+		<div class="footer-logo">
+		<p>DESIGNED BY </p>
+		<img src="img/symu.png" alt="symu" />
+		</div>
 	</div>
 </footer>
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
